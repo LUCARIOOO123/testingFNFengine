@@ -1,0 +1,122 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://chmlao5gcb0nq"]
+
+[ext_resource type="Texture2D" uid="uid://bqd1qcfgaglnx" path="res://assets/levels/ui/funkin/heatov/HEATOV_assets.png" id="1_heatov"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_down"]
+atlas = ExtResource("1_heatov")
+region = Rect2(277, 5, 157, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_left"]
+atlas = ExtResource("1_heatov")
+region = Rect2(115, 5, 157, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_right"]
+atlas = ExtResource("1_heatov")
+region = Rect2(164, 164, 154, 157)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_up"]
+atlas = ExtResource("1_heatov")
+region = Rect2(5, 164, 154, 157)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_down")
+}],
+"loop": 0,
+"name": &"down_note_hold",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_down")
+}],
+"loop": 0,
+"name": &"down_note_neutral",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_down")
+}],
+"loop": 0,
+"name": &"down_note_tail",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_left")
+}],
+"loop": 0,
+"name": &"left_note_hold",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_left")
+}],
+"loop": 0,
+"name": &"left_note_neutral",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_left")
+}],
+"loop": 0,
+"name": &"left_note_tail",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_right")
+}],
+"loop": 0,
+"name": &"right_note_hold",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_right")
+}],
+"loop": 0,
+"name": &"right_note_neutral",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_right")
+}],
+"loop": 0,
+"name": &"right_note_tail",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_up")
+}],
+"loop": 0,
+"name": &"up_note_hold",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_up")
+}],
+"loop": 0,
+"name": &"up_note_neutral",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_up")
+}],
+"loop": 0,
+"name": &"up_note_tail",
+"speed": 24.0
+}]

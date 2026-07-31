@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RubiconLevelMetadata" format=3 uid="uid://drwrxc2lg2g1l"]
+
+[ext_resource type="Script" uid="uid://bc3yyfgu0v8yh" path="res://addons/rubicon/scripts/data/rubicon_level_metadata_difficulty.gd" id="1_m4hdr"]
+[ext_resource type="Script" uid="uid://bn0j3jpwu1e0p" path="res://addons/rubicon/scripts/data/rubicon_level_metadata.gd" id="2_nus47"]
+[ext_resource type="Script" uid="uid://c1dyvxe4okjkv" path="res://addons/rubicon/scripts/data/rubicon_time_change.gd" id="3_2imwq"]
+
+[sub_resource type="Resource" id="Resource_6r87h"]
+script = ExtResource("3_2imwq")
+bpm = 165.0
+
+[resource]
+script = ExtResource("2_nus47")
+time_changes = Array[ExtResource("3_2imwq")]([SubResource("Resource_6r87h")])

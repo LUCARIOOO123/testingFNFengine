@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ben_OV_Assets.png"><SubTexture name="ben_OV_Assets idle0000" x="740" y="1080" width="394" height="1052" frameX="-769" frameY="-23" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0001" x="3580" y="2046" width="375" height="1018" frameX="-801" frameY="-57" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0002" x="3580" y="2046" width="375" height="1018" frameX="-801" frameY="-57" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0003" x="0" y="2133" width="371" height="1028" frameX="-804" frameY="-46" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0004" x="2660" y="1050" width="362" height="1047" frameX="-807" frameY="-28" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0005" x="2660" y="1050" width="362" height="1047" frameX="-807" frameY="-28" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0006" x="0" y="1080" width="361" height="1053" frameX="-803" frameY="-22" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0007" x="361" y="1080" width="379" height="1053" frameX="-785" frameY="-22" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0008" x="1134" y="1080" width="396" height="1052" frameX="-769" frameY="-23" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets idle0009" x="1530" y="1080" width="396" height="1052" frameX="-768" frameY="-23" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing up0000" x="1926" y="1080" width="531" height="1052" frameX="-711" frameY="-11" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing up0001" x="1612" y="0" width="524" height="1057" frameX="-700" frameY="-5" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing up0002" x="2136" y="0" width="524" height="1057" frameX="-700" frameY="-5" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing up0003" x="979" y="2133" width="532" height="1025" frameX="-730" frameY="-37" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing up0004" x="3055" y="1037" width="514" height="1036" frameX="-737" frameY="-26" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0000" x="2810" y="3161" width="578" height="1002" frameX="-546" frameY="-63" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0001" x="1145" y="3161" width="536" height="1011" frameX="-587" frameY="-55" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0002" x="1681" y="3161" width="536" height="1011" frameX="-587" frameY="-55" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0003" x="3055" y="0" width="525" height="1037" frameX="-592" frameY="-31" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0004" x="3580" y="0" width="498" height="1023" frameX="-619" frameY="-45" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0005" x="3580" y="1023" width="498" height="1023" frameX="-619" frameY="-45" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing left0006" x="4078" y="2044" width="520" height="1020" frameX="-597" frameY="-48" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0000" x="0" y="5170" width="764" height="891" frameX="-827" frameY="-180" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0001" x="5957" y="0" width="741" height="894" frameX="-835" frameY="-178" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0002" x="5957" y="894" width="741" height="894" frameX="-835" frameY="-178" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0003" x="5234" y="0" width="723" height="927" frameX="-836" frameY="-146" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0004" x="2762" y="4180" width="708" height="937" frameX="-836" frameY="-137" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0005" x="2762" y="4180" width="708" height="937" frameX="-836" frameY="-137" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0006" x="3470" y="4180" width="724" height="937" frameX="-841" frameY="-137" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing right0007" x="4194" y="4180" width="590" height="936" frameX="-841" frameY="-138" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0000" x="5957" y="3536" width="406" height="869" frameX="-735" frameY="-192" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0001" x="5957" y="1788" width="366" height="878" frameX="-743" frameY="-184" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0002" x="5957" y="1788" width="366" height="878" frameX="-743" frameY="-184" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0003" x="5234" y="2745" width="361" height="899" frameX="-733" frameY="-164" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0004" x="5234" y="927" width="433" height="909" frameX="-725" frameY="-154" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0005" x="5234" y="927" width="433" height="909" frameX="-725" frameY="-154" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV_Assets sing down0006" x="5234" y="1836" width="378" height="909" frameX="-784" frameY="-154" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0000" x="2660" y="0" width="395" height="1050" frameX="-780" frameY="-25" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0001" x="1485" y="5170" width="729" height="831" frameX="-817" frameY="-241" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0002" x="764" y="5170" width="721" height="854" frameX="-816" frameY="-218" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0003" x="5957" y="2666" width="698" height="870" frameX="-816" frameY="-202" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0004" x="5234" y="3644" width="692" height="867" frameX="-814" frameY="-205" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0005" x="2185" y="4180" width="577" height="980" frameX="-817" frameY="-92" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0006" x="578" y="3161" width="567" height="1014" frameX="-818" frameY="-59" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0007" x="4686" y="0" width="548" height="991" frameX="-764" frameY="-76" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0008" x="4686" y="991" width="548" height="991" frameX="-764" frameY="-76" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0009" x="0" y="4180" width="555" height="990" frameX="-753" frameY="-77" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0010" x="4686" y="1982" width="548" height="990" frameX="-753" frameY="-77" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0011" x="1642" y="4180" width="543" height="983" frameX="-758" frameY="-84" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0012" x="555" y="4180" width="546" height="986" frameX="-755" frameY="-81" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0013" x="1101" y="4180" width="541" height="985" frameX="-760" frameY="-82" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0014" x="4686" y="2972" width="533" height="990" frameX="-768" frameY="-77" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0015" x="3388" y="3161" width="533" height="993" frameX="-768" frameY="-74" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0016" x="3921" y="3161" width="533" height="993" frameX="-768" frameY="-74" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0017" x="2217" y="3161" width="593" height="1004" frameX="-708" frameY="-63" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0018" x="4078" y="1023" width="607" height="1021" frameX="-694" frameY="-46" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0019" x="371" y="2133" width="608" height="1026" frameX="-693" frameY="-41" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0020" x="4078" y="0" width="608" height="1023" frameX="-693" frameY="-44" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0021" x="1511" y="2133" width="608" height="1024" frameX="-693" frameY="-43" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0022" x="2119" y="2133" width="603" height="1024" frameX="-698" frameY="-43" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0023" x="0" y="3161" width="578" height="1019" frameX="-723" frameY="-48" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0024" x="2722" y="2133" width="699" height="1024" frameX="-632" frameY="-43" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0025" x="0" y="0" width="870" height="1080" frameX="-605" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform0026" x="870" y="0" width="742" height="1080" frameX="-660" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20000" x="4078" y="0" width="608" height="1023" frameX="-693" frameY="-44" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20001" x="1511" y="2133" width="608" height="1024" frameX="-693" frameY="-43" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20002" x="2119" y="2133" width="603" height="1024" frameX="-698" frameY="-43" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20003" x="0" y="3161" width="578" height="1019" frameX="-723" frameY="-48" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20004" x="2722" y="2133" width="699" height="1024" frameX="-632" frameY="-43" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20005" x="0" y="0" width="870" height="1080" frameX="-605" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="ben_OV transform20006" x="870" y="0" width="742" height="1080" frameX="-660" frameY="0" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

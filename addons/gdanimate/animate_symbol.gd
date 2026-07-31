@@ -31,6 +31,7 @@ class_name AnimateSymbol extends Node2D
 		symbol_changed.emit(v)
 		frame = 0
 		_timer = 0.0
+		_continuous_frame = 0
 
 ## Keeps track of whether or not the sprite is being animated automatically.
 @export var playing: bool = false
@@ -54,6 +55,11 @@ var _timer: float = 0.0
 var _current_transform: Transform2D = Transform2D.IDENTITY
 var _canvas_items: Array[RID] = []
 var _filters: Array[Filter] = []
+var _frame_offset: int = 0
+var _continuous_frame: int = 0
+var _content_frame_lists: Dictionary = {}
+var _loop_frame_lists: Dictionary = {}
+
 
 signal finished
 signal symbol_changed(symbol: String)
@@ -72,6 +78,7 @@ func _process(delta: float) -> void:
 	if _timer >= 1.0 / _animation.framerate:
 		var frame_diff := _timer / (1.0 / _animation.framerate)
 		frame += floori(frame_diff)
+		_continuous_frame += floori(frame_diff)
 		_timer -= (1.0 / _animation.framerate) * frame_diff
 		if frame > _timeline.length - 1:
 			match loop_mode:
@@ -85,7 +92,7 @@ func _process(delta: float) -> void:
 
 
 func _cache_atlas() -> void:
-	var parsed := ParsedAtlas.new()
+	var parsed: ParsedAtlas = ParsedAtlas.new()
 	parsed.collections = _collections
 	parsed.animation = _animation
 	
@@ -121,6 +128,7 @@ func load_atlas(path: String, use_cache: bool = true) -> void:
 		_animation = parsed.animation
 		_collections = parsed.collections
 		_clear_items()
+		_continuous_frame = 0
 		frame = 0
 		return
 	
@@ -146,16 +154,58 @@ func load_atlas(path: String, use_cache: bool = true) -> void:
 	if animation_json == null:
 		return
 	_animation = AtlasAnimation.load_from_json(animation_json)
+	_continuous_frame = 0
 	frame = 0
 
 
 func _draw_symbol(element: Element) -> void:
-	if not _animation.symbol_dictionary.has(element.name):
-		printerr('Tried to draw invalid symbol "%s"' % [element.name])
+	var draw_name: StringName = element.name
+	if draw_name == "glowing orb Fast":
+		draw_name = "glowing orb"
+	if not _animation.symbol_dictionary.has(draw_name):
+		printerr('Tried to draw invalid symbol "%s"' % [draw_name])
 		return
 	
 	_filters = element.filters
-	_draw_timeline(_animation.symbol_dictionary.get(element.name), element.frame)
+	var symbol_timeline: Timeline = _animation.symbol_dictionary.get(draw_name)
+	var sym := element as SymbolElement
+	var nested_frame: int = sym.frame + _frame_offset
+	
+	if symbol_timeline.length > 0 and sym != null:
+		match sym.loop_mode:
+			SymbolElement.SymbolLoopMode.LOOP:
+				if draw_name == "glowing orb":
+					var orb_content := _get_content_frames(symbol_timeline)
+					orb_content = orb_content.filter(func(f): return f >= 7 and f <= 15)
+					if not orb_content.is_empty():
+						var cycle_len := orb_content.size() * 2 - 2
+						var idx := _continuous_frame % cycle_len
+						idx = idx if idx < orb_content.size() else cycle_len - idx
+						nested_frame = orb_content[idx]
+					else:
+						nested_frame = 0
+				else:
+					var content := _get_content_frames(symbol_timeline)
+					if not content.is_empty():
+						var idx := (_continuous_frame + sym.frame) % content.size()
+						if content.size() > 1:
+							var cycle_len := content.size() * 2 - 2
+							idx = (_continuous_frame + sym.frame) % cycle_len
+							idx = idx if idx < content.size() else cycle_len - idx
+						nested_frame = content[idx]
+					else:
+						nested_frame = 0
+			SymbolElement.SymbolLoopMode.ONE_SHOT:
+				nested_frame = mini(nested_frame, symbol_timeline.length - 1)
+			SymbolElement.SymbolLoopMode.FREEZE_FRAME:
+				nested_frame = sym.frame
+			_:
+				nested_frame = mini(nested_frame, symbol_timeline.length - 1)
+	
+	var saved_offset := _frame_offset
+	_frame_offset = 0
+	_draw_timeline(symbol_timeline, nested_frame)
+	_frame_offset = saved_offset
 
 
 func _draw_sprite(element: Element) -> void:
@@ -223,6 +273,53 @@ func _draw_sprite(element: Element) -> void:
 	printerr('Tried to draw invalid sprite "%s"' % [element.name])
 
 
+func _get_content_frames(timeline: Timeline) -> Array[int]:
+	if _content_frame_lists.has(timeline):
+		return _content_frame_lists[timeline]
+	var result: Array[int] = []
+	for i in timeline.length:
+		var has_content := false
+		for layer in timeline.layers:
+			for lf in layer.frames:
+				if lf.index <= i and i < lf.index + lf.duration:
+					if not lf.elements.is_empty():
+						has_content = true
+						break
+			if has_content:
+				break
+		if has_content:
+			result.push_back(i)
+	_content_frame_lists[timeline] = result
+	return result
+
+
+func _is_identity_frame(timeline: Timeline, frame_idx: int) -> bool:
+	for layer in timeline.layers:
+		for lf in layer.frames:
+			if lf.index <= frame_idx and frame_idx < lf.index + lf.duration:
+				if lf.elements.is_empty():
+					return true
+				for e in lf.elements:
+					if e.transform != Transform2D.IDENTITY:
+						return false
+	return true
+
+
+func _get_loop_frames(timeline: Timeline) -> Array[int]:
+	if _loop_frame_lists.has(timeline):
+		return _loop_frame_lists[timeline]
+	var all_content := _get_content_frames(timeline)
+	var start := 0
+	while start < all_content.size() and _is_identity_frame(timeline, all_content[start]):
+		start += 1
+	var end := all_content.size() - 1
+	while end >= start and _is_identity_frame(timeline, all_content[end]):
+		end -= 1
+	var result := all_content.slice(start, end + 1)
+	_loop_frame_lists[timeline] = result
+	return result
+
+
 func _draw_timeline(timeline: Timeline, target_frame: int) -> void:
 	var layer_transform := _current_transform
 	for i in timeline.layers.size():
@@ -232,7 +329,9 @@ func _draw_timeline(timeline: Timeline, target_frame: int) -> void:
 				continue
 			if target_frame > layer_frame.index + layer_frame.duration - 1:
 				continue
+			_frame_offset = target_frame - layer_frame.index
 			for element in layer_frame.elements:
+				var prev := _current_transform
 				_current_transform = layer_transform
 				_current_transform *= element.transform
 				match element.type:
@@ -259,4 +358,5 @@ func _draw() -> void:
 	if not is_instance_valid(_timeline):
 		return
 	_current_transform = Transform2D.IDENTITY
+	_frame_offset = 0
 	_draw_timeline(_timeline, frame)

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bf-ov-v2_Assets.png"><SubTexture name="bf-ov-v2_Assets idle0000" x="6662" y="866" width="489" height="865" frameX="-669" frameY="-188" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0000" x="6662" y="5161" width="486" height="820" frameX="-642" frameY="-242" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0001" x="6662" y="5161" width="486" height="820" frameX="-642" frameY="-242" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0002" x="6662" y="4315" width="495" height="846" frameX="-658" frameY="-224" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0003" x="6662" y="2594" width="491" height="861" frameX="-666" frameY="-209" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0004" x="6662" y="2594" width="491" height="861" frameX="-666" frameY="-209" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0005" x="6049" y="5369" width="491" height="866" frameX="-670" frameY="-187" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0006" x="1757" y="5369" width="490" height="870" frameX="-668" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 idle0007" x="1757" y="5369" width="490" height="870" frameX="-668" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing left0000" x="765" y="6247" width="658" height="856" frameX="-567" frameY="-193" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing left0001" x="765" y="6247" width="658" height="856" frameX="-567" frameY="-193" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing left0002" x="2081" y="6247" width="618" height="854" frameX="-581" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing left0003" x="2081" y="6247" width="618" height="854" frameX="-581" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing left0004" x="6662" y="1731" width="498" height="863" frameX="-666" frameY="-190" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing left0005" x="2247" y="5369" width="490" height="870" frameX="-668" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing left0000" x="1423" y="6247" width="658" height="856" frameX="-567" frameY="-193" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing left0001" x="2699" y="6247" width="618" height="854" frameX="-581" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing left0002" x="2699" y="6247" width="618" height="854" frameX="-581" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0000" x="3317" y="6247" width="579" height="843" frameX="-671" frameY="-216" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0001" x="3317" y="6247" width="579" height="843" frameX="-671" frameY="-216" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0002" x="5476" y="5369" width="573" height="867" frameX="-674" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0003" x="5476" y="5369" width="573" height="867" frameX="-674" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0004" x="770" y="5369" width="498" height="872" frameX="-669" frameY="-181" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0005" x="1268" y="5369" width="489" height="871" frameX="-669" frameY="-182" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing right0006" x="2737" y="5369" width="496" height="870" frameX="-662" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing right0000" x="3896" y="6247" width="579" height="843" frameX="-671" frameY="-216" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing right0001" x="6662" y="0" width="573" height="866" frameX="-674" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing right0002" x="6662" y="0" width="573" height="866" frameX="-674" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing up0000" x="0" y="0" width="507" height="899" frameX="-677" frameY="-148" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing up0001" x="0" y="0" width="507" height="899" frameX="-677" frameY="-148" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing up0002" x="4392" y="4475" width="472" height="893" frameX="-671" frameY="-152" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing up0003" x="4864" y="4475" width="472" height="893" frameX="-671" frameY="-152" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing up0004" x="5930" y="2673" width="469" height="888" frameX="-671" frameY="-165" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing up0005" x="5458" y="893" width="470" height="876" frameX="-670" frameY="-181" frameWidth="1920" frameHeight="1080" />
+<SubTexture name=" sing up0000" x="3233" y="5369" width="490" height="870" frameX="-668" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing up0000" x="507" y="0" width="507" height="899" frameX="-677" frameY="-148" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing up0001" x="5458" y="0" width="472" height="893" frameX="-671" frameY="-152" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing up0002" x="5458" y="0" width="472" height="893" frameX="-671" frameY="-152" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0000" x="5539" y="6247" width="556" height="788" frameX="-649" frameY="-266" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0001" x="5539" y="6247" width="556" height="788" frameX="-649" frameY="-266" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0002" x="4475" y="6247" width="532" height="807" frameX="-655" frameY="-248" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0003" x="4475" y="6247" width="532" height="807" frameX="-655" frameY="-248" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0004" x="6662" y="3455" width="517" height="860" frameX="-672" frameY="-193" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0005" x="3723" y="5369" width="501" height="870" frameX="-668" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 sing down0006" x="4224" y="5369" width="490" height="870" frameX="-668" frameY="-183" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing down0000" x="6095" y="6247" width="556" height="788" frameX="-649" frameY="-266" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing down0001" x="5007" y="6247" width="532" height="807" frameX="-655" frameY="-248" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 miss sing down0002" x="5007" y="6247" width="532" height="807" frameX="-655" frameY="-248" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 dodge0000" x="0" y="5369" width="770" height="878" frameX="-615" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 dodge0001" x="4714" y="5369" width="762" height="869" frameX="-624" frameY="-187" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2 dodge0002" x="0" y="6247" width="765" height="862" frameX="-621" frameY="-193" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0000" x="5930" y="3561" width="722" height="879" frameX="-608" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0001" x="5930" y="4440" width="722" height="879" frameX="-608" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0002" x="5930" y="893" width="732" height="890" frameX="-606" frameY="-176" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0003" x="5930" y="1783" width="732" height="890" frameX="-606" frameY="-176" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0004" x="5930" y="0" width="732" height="893" frameX="-605" frameY="-176" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0005" x="1746" y="0" width="784" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0006" x="0" y="899" width="858" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0007" x="858" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0008" x="858" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0009" x="858" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0010" x="858" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0011" x="858" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0012" x="858" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0013" x="1590" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0014" x="1590" y="899" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0015" x="2530" y="0" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0016" x="2530" y="894" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0017" x="1014" y="0" width="732" height="896" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0018" x="0" y="1793" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0019" x="732" y="1793" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0020" x="1464" y="1793" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0021" x="1464" y="1793" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0022" x="2196" y="1793" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0023" x="3262" y="0" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0024" x="3262" y="894" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0025" x="3262" y="1788" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0026" x="0" y="2687" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0027" x="732" y="2687" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0028" x="1464" y="2687" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0029" x="2196" y="2687" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death first0030" x="2928" y="2687" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0000" x="3994" y="0" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0001" x="3994" y="894" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0002" x="3994" y="894" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0003" x="3994" y="1788" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0004" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0005" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0006" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0007" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0008" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0009" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0010" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0011" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0012" x="0" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0013" x="732" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0014" x="1464" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0015" x="1464" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0016" x="2196" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0017" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0018" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0019" x="2928" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0020" x="3660" y="3581" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death loop0021" x="4726" y="0" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0000" x="4726" y="894" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0001" x="4726" y="1788" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0002" x="4726" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0003" x="4726" y="3576" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0004" x="4726" y="3576" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0005" x="0" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0006" x="732" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0007" x="1464" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0008" x="2196" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0009" x="2196" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0010" x="2928" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0011" x="3660" y="4475" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0012" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0013" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0014" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bf-ov-v2_Assets death confirm0015" x="3994" y="2682" width="732" height="894" frameX="-606" frameY="-177" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

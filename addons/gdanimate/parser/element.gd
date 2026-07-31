@@ -20,11 +20,16 @@ func parse_unoptimized(input: Dictionary) -> void:
 
 
 func parse_optimized(input: Dictionary) -> void:
-	if not input.has(15):
+	if input.is_empty():
 		printerr('Invalid Matrix3D')
 		return
 	
 	transform = Transform2D.IDENTITY
-	transform.origin = Vector2(input[12], input[13])
-	transform.x = Vector2(input[0], input[1])
-	transform.y = Vector2(input[4], input[5])
+	if input.has(12):
+		transform.origin = Vector2(input[12], input[13])
+		transform.x = Vector2(input[0], input[1])
+		transform.y = Vector2(input[4], input[5])
+	else:
+		transform.origin = Vector2(input[4], input[5])
+		transform.x = Vector2(input[0], input[1])
+		transform.y = Vector2(input[2], input[3])

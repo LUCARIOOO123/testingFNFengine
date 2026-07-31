@@ -15,13 +15,17 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Rubicon Engine: Friday Night Funkin'"
-run/main_scene="uid://bte2jyircefco"
+run/main_scene="res://scenes/menus/main_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="uid://dlxowoyf4wnti"
 
 [audio]
 
 buses/default_bus_layout="uid://dg07spmwy57em"
+
+[autoload]
+
+DebugOverlay="*res://addons/debug_overlay/fps_memory_overlay.gd"
 
 [display]
 

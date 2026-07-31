@@ -87,10 +87,10 @@ func parse_optimized(input: Dictionary) -> void:
 		## TODO: Get the other loop names lmao
 		'PO': loop_mode = SymbolLoopMode.ONE_SHOT
 		'LP': loop_mode = SymbolLoopMode.LOOP
+		'SF': loop_mode = SymbolLoopMode.FREEZE_FRAME
 		_: loop_mode = SymbolLoopMode.LOOP
 	
-	# Small conversion because inheritance yucky
-	var m3d: Array = symbol.get('M3D', [])
+	var m3d: Array = symbol.get('M3D', symbol.get('MX', []))
 	var m3d_dict: Dictionary = {}
 	for i: int in m3d.size():
 		m3d_dict.set(i, m3d[i])

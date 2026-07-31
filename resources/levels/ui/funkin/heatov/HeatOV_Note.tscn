@@ -1,0 +1,829 @@
+[gd_scene format=3 uid="uid://dhpvroar55tv3"]
+
+[ext_resource type="Script" uid="uid://bdt5xs4hqh4ng" path="res://addons/rubicon_mania/scripts/rubicon_level_mania_note.gd" id="1_vqnpu"]
+[ext_resource type="Texture2D" uid="uid://bqd1qcfgaglnx" path="res://assets/levels/ui/funkin/heatov/HEATOV_assets.png" id="2_heatov"]
+[ext_resource type="SpriteFrames" uid="uid://chmlao5gcb0nq" path="res://assets/levels/ui/funkin/heatov/heatov_notes_frames.tres" id="3_heatov"]
+[ext_resource type="AnimationLibrary" uid="uid://c4v276x7blgvk" path="res://assets/levels/ui/funkin/heatov/heatov_notes_library.tres" id="4_heatov"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trail_body"]
+atlas = ExtResource("2_heatov")
+region = Rect2(60, 5, 50, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trail_tail"]
+atlas = ExtResource("2_heatov")
+region = Rect2(5, 5, 50, 64)
+
+[sub_resource type="Animation" id="Animation_trail_RESET"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TrailL:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TrailD:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TrailU:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TrailR:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_trail_down"]
+resource_name = "down"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TrailL:visible")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TrailD:visible")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TrailU:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TrailR:visible")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_trail_left"]
+resource_name = "left"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TrailL:visible")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TrailD:visible")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TrailU:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TrailR:visible")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_trail_right"]
+resource_name = "right"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TrailL:visible")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TrailD:visible")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TrailU:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TrailR:visible")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_trail_up"]
+resource_name = "up"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TrailL:visible")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TrailD:visible")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TrailU:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TrailR:visible")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_trails"]
+_data = {
+&"RESET": SubResource("Animation_trail_RESET"),
+&"down": SubResource("Animation_trail_down"),
+&"left": SubResource("Animation_trail_left"),
+&"right": SubResource("Animation_trail_right"),
+&"up": SubResource("Animation_trail_up")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_RESET_dir"]
+animation = &"RESET"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_down_dir"]
+animation = &"down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_left_dir"]
+animation = &"left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_right_dir"]
+animation = &"right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_up_dir"]
+animation = &"up"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_start_root"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_lane_0"]
+advance_mode = 2
+advance_expression = "lane_id == 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_not_lane_0"]
+advance_mode = 2
+advance_expression = "lane_id != 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_lane_1"]
+advance_mode = 2
+advance_expression = "lane_id == 1"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_not_lane_1"]
+advance_mode = 2
+advance_expression = "lane_id != 1"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_lane_2"]
+advance_mode = 2
+advance_expression = "lane_id == 2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_not_lane_2"]
+advance_mode = 2
+advance_expression = "lane_id != 2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_lane_3"]
+advance_mode = 2
+advance_expression = "lane_id == 3"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_not_lane_3"]
+advance_mode = 2
+advance_expression = "lane_id != 3"
+
+[sub_resource type="AnimationNodeStateMachine" id="DirectionStateMachine"]
+states/RESET/node = SubResource("AnimationNodeAnimation_RESET_dir")
+states/RESET/position = Vector2(102.5, 152.375)
+states/Start/position = Vector2(-31.5, 151.25)
+states/down/node = SubResource("AnimationNodeAnimation_down_dir")
+states/down/position = Vector2(361.6875, 74.875)
+states/left/node = SubResource("AnimationNodeAnimation_left_dir")
+states/left/position = Vector2(361.53125, -38.5)
+states/right/node = SubResource("AnimationNodeAnimation_right_dir")
+states/right/position = Vector2(363.375, 308.8008)
+states/up/node = SubResource("AnimationNodeAnimation_up_dir")
+states/up/position = Vector2(361.375, 188.5)
+transitions = ["Start", "RESET", SubResource("Transition_start_root"), "RESET", "left", SubResource("Transition_lane_0"), "left", "RESET", SubResource("Transition_not_lane_0"), "RESET", "down", SubResource("Transition_lane_1"), "down", "RESET", SubResource("Transition_not_lane_1"), "RESET", "up", SubResource("Transition_lane_2"), "up", "RESET", SubResource("Transition_not_lane_2"), "RESET", "right", SubResource("Transition_lane_3"), "right", "RESET", SubResource("Transition_not_lane_3")]
+graph_offset = Vector2(-320.27322, -42.443554)
+
+[sub_resource type="Animation" id="Animation_direction_RESET"]
+resource_name = "RESET"
+length = 0.041670833
+step = 0.041666668
+tracks/0/type = "animation"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic/AnimationPlayer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": PackedStringArray("ArrowDef_Up_Outline"),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_direction_down"]
+resource_name = "down"
+length = 0.041670833
+step = 0.041666668
+tracks/0/type = "animation"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic/AnimationPlayer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": PackedStringArray("heatov_notes_library/down_note_neutral"),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "animation"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Container/TrailMask/AnimationPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": PackedStringArray("down"),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_direction_left"]
+resource_name = "left"
+length = 0.041670833
+step = 0.041666668
+tracks/0/type = "animation"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic/AnimationPlayer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": PackedStringArray("heatov_notes_library/left_note_neutral"),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "animation"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Container/TrailMask/AnimationPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": PackedStringArray("left"),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_direction_right"]
+resource_name = "right"
+length = 0.041670833
+step = 0.041666668
+tracks/0/type = "animation"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic/AnimationPlayer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": PackedStringArray("heatov_notes_library/right_note_neutral"),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "animation"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Container/TrailMask/AnimationPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": PackedStringArray("right"),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_direction_up"]
+resource_name = "up"
+length = 0.041670833
+step = 0.041666668
+tracks/0/type = "animation"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic/AnimationPlayer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": PackedStringArray("heatov_notes_library/up_note_neutral"),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "animation"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Container/TrailMask/AnimationPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": PackedStringArray("up"),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_direction"]
+_data = {
+&"RESET": SubResource("Animation_direction_RESET"),
+&"down": SubResource("Animation_direction_down"),
+&"left": SubResource("Animation_direction_left"),
+&"right": SubResource("Animation_direction_right"),
+&"up": SubResource("Animation_direction_up")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_missed"]
+animation = &"missed"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_neutral_miss"]
+animation = &"neutral"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_miss_start"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_miss_true"]
+advance_mode = 2
+advance_expression = "was_missed()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_miss_false"]
+advance_mode = 2
+advance_expression = "not was_missed()"
+
+[sub_resource type="AnimationNodeStateMachine" id="MissedStateMachine"]
+states/missed/node = SubResource("AnimationNodeAnimation_missed")
+states/missed/position = Vector2(487.5, 100.25)
+states/neutral/node = SubResource("AnimationNodeAnimation_neutral_miss")
+states/neutral/position = Vector2(346, 100.5)
+transitions = ["Start", "neutral", SubResource("Transition_miss_start"), "neutral", "missed", SubResource("Transition_miss_true"), "missed", "neutral", SubResource("Transition_miss_false")]
+
+[sub_resource type="Animation" id="Animation_missed_tint"]
+resource_name = "missed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.24658796, 0.24658787, 0.24658784, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Container/TrailMask:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.24658796, 0.24658787, 0.24658784, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_neutral_tint"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Container/Sprite/Graphic:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Container/TrailMask:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_missed"]
+_data = {
+&"missed": SubResource("Animation_missed_tint"),
+&"neutral": SubResource("Animation_neutral_tint")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_held"]
+animation = &"held"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_neutral_held"]
+animation = &"neutral"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_held_start"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_held_true"]
+advance_mode = 2
+advance_expression = "was_hit() and not was_missed()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="Transition_held_false"]
+advance_mode = 2
+advance_expression = "not was_hit() or was_missed()"
+
+[sub_resource type="AnimationNodeStateMachine" id="HeldStateMachine"]
+states/held/node = SubResource("AnimationNodeAnimation_held")
+states/held/position = Vector2(481, 100.125)
+states/neutral/node = SubResource("AnimationNodeAnimation_neutral_held")
+states/neutral/position = Vector2(343, 100.25)
+transitions = ["Start", "neutral", SubResource("Transition_held_start"), "neutral", "held", SubResource("Transition_held_true"), "held", "neutral", SubResource("Transition_held_false")]
+
+[sub_resource type="Animation" id="Animation_held_on"]
+resource_name = "held"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Container/Sprite/Graphic:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:show_behind_parent")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_held_off"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Container/Sprite/Graphic:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:show_behind_parent")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_held"]
+_data = {
+&"held": SubResource("Animation_held_on"),
+&"neutral": SubResource("Animation_held_off")
+}
+
+[node name="Note" type="Control" unique_id=425197780 node_paths=PackedStringArray("reference_graphic", "reference_trail", "reference_container")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vqnpu")
+reference_graphic = NodePath("Container/Sprite")
+reference_trail = NodePath("Container/TrailMask/TrailL")
+reference_container = NodePath("Container")
+metadata/_custom_type_script = "uid://bdt5xs4hqh4ng"
+
+[node name="Container" type="Control" parent="." unique_id=1422199603]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -75.0
+offset_right = 150.0
+offset_bottom = 75.0
+grow_vertical = 2
+pivot_offset = Vector2(0, 75)
+
+[node name="TrailMask" type="Control" parent="Container" unique_id=814172829]
+show_behind_parent = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 75)
+
+[node name="TrailL" type="TextureRect" parent="Container/TrailMask" unique_id=320553279]
+modulate = Color(1, 1, 1, 0.5019608)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = 50.0
+offset_right = -64.0
+offset_bottom = -50.0
+texture = SubResource("AtlasTexture_trail_body")
+expand_mode = 1
+
+[node name="Tail" type="TextureRect" parent="Container/TrailMask/TrailL" unique_id=2134936530]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_trail_tail")
+
+[node name="TrailD" type="TextureRect" parent="Container/TrailMask" unique_id=301607859]
+visible = false
+modulate = Color(1, 1, 1, 0.5019608)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = 50.0
+offset_right = -64.0
+offset_bottom = -50.0
+texture = SubResource("AtlasTexture_trail_body")
+expand_mode = 1
+
+[node name="Tail" type="TextureRect" parent="Container/TrailMask/TrailD" unique_id=214120093]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_trail_tail")
+
+[node name="TrailU" type="TextureRect" parent="Container/TrailMask" unique_id=211361522]
+visible = false
+modulate = Color(1, 1, 1, 0.5019608)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = 50.0
+offset_right = -64.0
+offset_bottom = -50.0
+texture = SubResource("AtlasTexture_trail_body")
+expand_mode = 1
+
+[node name="Tail" type="TextureRect" parent="Container/TrailMask/TrailU" unique_id=762902309]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_trail_tail")
+
+[node name="TrailR" type="TextureRect" parent="Container/TrailMask" unique_id=522613433]
+visible = false
+modulate = Color(1, 1, 1, 0.5019608)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = 50.0
+offset_right = -64.0
+offset_bottom = -50.0
+texture = SubResource("AtlasTexture_trail_body")
+expand_mode = 1
+
+[node name="Tail" type="TextureRect" parent="Container/TrailMask/TrailR" unique_id=1572487606]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_trail_tail")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Container/TrailMask" unique_id=1258909375]
+libraries/ = SubResource("AnimationLibrary_trails")
+
+[node name="Sprite" type="Control" parent="Container" unique_id=2078823711]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -75.0
+offset_bottom = -75.0
+grow_vertical = 2
+pivot_offset = Vector2(0, 75)
+
+[node name="Graphic" type="AnimatedSprite2D" parent="Container/Sprite" unique_id=901087157]
+position = Vector2(0, 75)
+sprite_frames = ExtResource("3_heatov")
+animation = &"left_note_neutral"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Container/Sprite/Graphic" unique_id=1219401972]
+libraries/heatov_notes_library = ExtResource("4_heatov")
+
+[node name="DirectionTree" type="AnimationTree" parent="." unique_id=365274476]
+reset_on_save = false
+tree_root = SubResource("DirectionStateMachine")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("DirectionPlayer")
+
+[node name="DirectionPlayer" type="AnimationPlayer" parent="DirectionTree" unique_id=2104168670]
+reset_on_save = false
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_direction")
+
+[node name="MissedTree" type="AnimationTree" parent="." unique_id=981083339]
+reset_on_save = false
+tree_root = SubResource("MissedStateMachine")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("MissedPlayer")
+
+[node name="MissedPlayer" type="AnimationPlayer" parent="MissedTree" unique_id=1821942090]
+reset_on_save = false
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_missed")
+
+[node name="HeldTree" type="AnimationTree" parent="." unique_id=967671740]
+root_node = NodePath(".")
+tree_root = SubResource("HeldStateMachine")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("HeldPlayer")
+
+[node name="HeldPlayer" type="AnimationPlayer" parent="HeldTree" unique_id=316269643]
+libraries/ = SubResource("AnimationLibrary_held")

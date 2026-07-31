@@ -15,8 +15,7 @@ func parse_optimized(input: Dictionary) -> void:
 	var sprite: Dictionary = input.get('ASI', {})
 	name = StringName(sprite.get('N', ''))
 	
-	# Small conversion because inheritance yucky
-	var m3d: Array = sprite.get('M3D', [])
+	var m3d: Array = sprite.get('M3D', sprite.get('MX', []))
 	var m3d_dict: Dictionary = {}
 	for i: int in m3d.size():
 		m3d_dict.set(i, m3d[i])
